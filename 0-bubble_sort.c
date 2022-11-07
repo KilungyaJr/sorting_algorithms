@@ -1,18 +1,7 @@
 #include "sort.h"
 #include <stddef.h>
 
-/**
- * swap - swaps array elements
- * @xp: ptr to array element
- * @yp: prt to array element
- * Return: void
- */
-void swap(int *xp, int *yp)
-{
-	int temp = *xp;
-	*xp = *yp;
-	*yp = temp;
-}
+void swap(int *xp, int *yp);
 
 /**
  * bubble_sort - sorts an array of integers in ascending order
@@ -44,4 +33,17 @@ void bubble_sort(int *array, size_t size)
 		if (isSorted == 1)
 			break;
 	}
+}
+
+/**
+ * swap - swaps array elements
+ * @xp: ptr to array element
+ * @yp: prt to array element
+ * Return: void
+ */
+void swap(int *xp, int *yp)
+{
+	int temp = *xp;
+	*xp = *yp;
+	*yp = temp;
 }
